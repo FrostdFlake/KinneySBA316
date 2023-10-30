@@ -13,9 +13,21 @@ const textNdWerds = document.querySelectorAll("ul");
 sectEight.append(...textNdWerds);
 sectEight.style.display = "flex";
 sectEight.style.flexWrap = "wrap";
+const secondTitles = document.querySelectorAll("h2");
+const titleElements = [firstTitle, ...secondTitles];
 
-mainDoc.addEventListener("click", myFunction);
-function myFunction() {
-  let element = document.body;
-  element.classList.toggle("light-mode");
-}
+titleElements.forEach(function(titleElement) {
+  titleElement.addEventListener("click", function() {
+    let element = document.body;
+    element.classList.toggle("light-mode");
+  });
+});
+
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const email = document.getElementById("email").value;
+  const enjoy = document.getElementById("enjoy").value;
+  const comment = document.getElementById("comment").value;
+  const confirmationMessage = `Email: ${email}\nEnjoyed the site: ${enjoy}\nComment: ${comment}`;
+  alert("You are about to submit the following information:\n\n" + confirmationMessage);
+});

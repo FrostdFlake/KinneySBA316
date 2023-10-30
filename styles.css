@@ -23,6 +23,10 @@ h2 {
   display: block;
 }
 
+#submit {
+  background-color: #34db34;
+  color: #04644a;
+}
 
 ul {
   width: 45%;
@@ -42,4 +46,9 @@ ul {
 .light-mode ::placeholder {
   background-color: #c0fccc;
   color: #f74ecc;
+}
+
+.light-mode #submit {
+  background-color: #b434db;
+  color: #fd9309;
 }
