@@ -1,0 +1,45 @@
+body,
+input[type="email"],
+select,
+textarea,
+::placeholder {
+  background-color: #280255;
+  color: #46faca;
+}
+
+h1,
+h2 {
+  color: #fd7419;
+}
+
+#form {
+  display: block;
+}
+
+#form label,
+#form input,
+#form select,
+#form textarea {
+  display: block;
+}
+
+
+ul {
+  width: 45%;
+}
+
+.light-mode {
+  background-color: #c0fccc;
+  color: #ad68fc;
+}
+.light-mode h1,
+.light-mode h2 {
+  color: #479bfc;
+}
+.light-mode input[type="email"],
+.light-mode select,
+.light-mode textarea,
+.light-mode ::placeholder {
+  background-color: #c0fccc;
+  color: #f74ecc;
+}
