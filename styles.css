@@ -12,6 +12,14 @@ h2 {
   color: #fd7419;
 }
 
+iframe {
+  width: 20%;
+}
+
+img {
+  width: 40%;
+}
+
 #form {
   display: block;
 }

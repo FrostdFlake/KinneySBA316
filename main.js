@@ -1,7 +1,7 @@
 const bawdyDoc = document.querySelector("body");
 const mainDoc = document.getElementById("main");
 const firstTitle = document.createElement("h1");
-firstTitle.textContent = "Project Title Goes Here";
+firstTitle.textContent = "Performing Art";
 firstTitle.style.textAlign = "center";
 const daDiv = document.createElement("div");
 const sectEight = document.createElement("section");
@@ -23,11 +23,11 @@ titleElements.forEach(function(titleElement) {
   });
 });
 
-document.getElementById("myForm").addEventListener("submit", function(event) {
+document.getElementById("form").addEventListener("submit", function(event) {
   event.preventDefault();
   const email = document.getElementById("email").value;
   const enjoy = document.getElementById("enjoy").value;
   const comment = document.getElementById("comment").value;
-  const confirmationMessage = `Email: ${email}\nEnjoyed the site: ${enjoy}\nComment: ${comment}`;
-  alert("You are about to submit the following information:\n\n" + confirmationMessage);
+  const confirmationMessage = `You are about to submit the following information:\n\nEmail: ${email}\nEnjoyed the site: ${enjoy}\nComment: ${comment}`;
+  alert(confirmationMessage);
 });

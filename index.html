@@ -11,43 +11,43 @@
       <iframe
         allow="fullscreen"
         frameborder="0"
-        height="426"
+        height="500"
         src="https://giphy.com/embed/tMIiH0AxQGd7PB1Q5W/video"
-        width="240"
+        width="480"
       ></iframe>
       <img
         src="https://64.media.tumblr.com/f277d50a743fe78b001bb9e71047f661/1592c0d272b51a18-8e/s540x810/37283e3c14c260e17a8b92d18b9a8520e6454342.gifv"
       />
-      <div id="form">
-      <form>
-        <fieldset>
-          <label for="email"
-            >Enter Valid Email:
-            <input id="email" name="email" type="email" required
-          /></label>
-          <label for="enjoy"
-            >Did you enjoy the site? Please feel free to drop a comment below!
-            <select id="enojy" name="enjoy">
-              <option value="">(select one)</option>
-              <option value="1">Yes</option>
-              <option value="2">No</option>
-              <option value="3">It was mid</option>
-              <option value="4">Other</option>
-            </select>
-          </label>
-          <label for="comment"
-            >Provide a comment:
-            <textarea
-              id="comment"
-              name="comment"
-              rows="3"
-              cols="30"
-              placeholder="Enter text here...Lorem Ipsum or sumn."
-            ></textarea>
-          </label>
-          <input type="submit" value="Submit" id="submit"> 
-        </fieldset>
-      </form>
+      <div id="formdiv">
+        <form id="form">
+          <fieldset>
+            <label for="email"
+              >Enter Valid Email:
+              <input id="email" name="email" type="email" required
+            /></label>
+            <label for="enjoy"
+              >Did you enjoy the site? Please feel free to drop a comment below!
+              <select id="enjoy" name="enjoy" required>
+                <option value="">(select one)</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="It was mid">It was mid</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+            <label for="comment"
+              >Provide a comment:
+              <textarea
+                id="comment"
+                name="comment"
+                rows="3"
+                cols="30"
+                placeholder="Enter text here...Lorem Ipsum or sumn."
+              ></textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit" />
+          </fieldset>
+        </form>
       </div>
       <img
         src="https://64.media.tumblr.com/1a386f9c3880f663193fb08dab462a76/61dd099032d2ceb3-9d/s540x810/1b941fb6ff09afc4b0622b25da97ff8841151066.gif"
